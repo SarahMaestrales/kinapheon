@@ -5,13 +5,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>Kinapheon — El arte de cuidarse en cada movimiento</title>
+<title>KINAPHEON — A arte de coidarse en cada movemento</title>
 
 <meta name="description" content="Kinapheon: especialista en movemento, deporte, saúde e benestar inclusivo. Descubre os nosos servizos de Pilates, ioga, natación, danza e deporte adaptado.">
 
 <link rel="canonical" href="https://kinapheon.com/">
 
-<meta property="og:title" content="Kinapheon — A arte do movemento">
+<meta property="og:title" content="KINAPHEON — A arte de coidarse en cada movemento">
 <meta property="og:description" content="Movemento, deporte, saúde e benestar inclusivo para cada etapa da vida.">
 <meta property="og:url" content="https://kinapheon.com/">
 <meta property="og:type" content="website">
@@ -28,8 +28,17 @@
     --blue-light:#3E7CAE;
     --line:#CFC7B4;
   }
-  *{box-sizing:border-box; margin:0; padding:0;}
-  html{scroll-behavior:smooth;}
+
+  *{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+  }
+
+  html{
+    scroll-behavior:smooth;
+  }
+
   body{
     background:var(--cream);
     color:var(--ink);
@@ -37,52 +46,61 @@
     line-height:1.6;
     -webkit-font-smoothing:antialiased;
   }
+
   .wrap{
     max-width:760px;
     margin:0 auto;
     padding:0 28px;
   }
+
+  /* HEADER AND LOGO */
+
   header{
     padding:56px 0 28px;
     text-align:center;
   }
-  .mark-frame{
-    width:100%;
-    max-width:620px;
-    margin:0 auto 24px;
-    padding:28px;
-    background:var(--ink);
-    border:1px solid var(--blue-light);
-    box-shadow:0 10px 32px rgba(22,50,79,0.18);
-    border-radius:4px;
-  }
+
   .mark{
-    width:100%;
-    height:auto;
+    width:220px;
+    height:220px;
     display:block;
+    margin:0 auto 24px;
+    border-radius:50%;
+    border:4px solid var(--blue);
+    object-fit:cover;
+    object-position:center;
+    box-shadow:0 6px 22px rgba(22,50,79,0.18);
   }
-  h1{
+
+  .brand-name{
     font-family:'Cormorant Garamond',serif;
-    font-weight:600;
-    font-size:clamp(40px,8vw,60px);
-    letter-spacing:0.04em;
+    font-weight:700;
+    font-size:clamp(38px,8vw,52px);
+    letter-spacing:0.16em;
     color:var(--blue);
+    line-height:1.1;
   }
+
   .tagline{
     font-family:'Cormorant Garamond',serif;
     font-style:italic;
-    font-size:19px;
+    font-size:21px;
     color:var(--ink);
-    opacity:0.75;
-    margin-top:6px;
+    opacity:0.8;
+    margin-top:10px;
   }
+
   .rule{
     width:64px;
     height:1px;
     background:var(--line);
     margin:40px auto;
   }
-  main{padding-bottom:64px;}
+
+  main{
+    padding-bottom:64px;
+  }
+
   h2{
     font-family:'Cormorant Garamond',serif;
     font-weight:600;
@@ -91,6 +109,7 @@
     margin-bottom:18px;
     text-align:center;
   }
+
   h3{
     font-family:'Cormorant Garamond',serif;
     font-weight:600;
@@ -99,6 +118,7 @@
     margin-bottom:18px;
     text-align:center;
   }
+
   p{
     font-size:17px;
     max-width:60ch;
@@ -106,6 +126,7 @@
     text-align:center;
     color:#33445A;
   }
+
   blockquote{
     font-family:'Cormorant Garamond',serif;
     font-style:italic;
@@ -116,12 +137,14 @@
     color:var(--ink);
     line-height:1.55;
   }
+
   .checklist{
     list-style:none;
     max-width:440px;
     margin:0 auto 48px;
     padding:0;
   }
+
   .checklist li{
     display:flex;
     align-items:flex-start;
@@ -130,6 +153,7 @@
     color:#33445A;
     padding:9px 0;
   }
+
   .checklist li::before{
     content:"✔";
     color:var(--blue);
@@ -137,10 +161,12 @@
     line-height:1.5;
     flex-shrink:0;
   }
+
   .contact{
     margin-top:48px;
     text-align:center;
   }
+
   .phone{
     display:inline-block;
     font-family:'Cormorant Garamond',serif;
@@ -151,6 +177,7 @@
     padding-bottom:4px;
     letter-spacing:0.02em;
   }
+
   .phone-label{
     display:block;
     font-size:13px;
@@ -158,10 +185,12 @@
     color:var(--blue-light);
     margin-bottom:8px;
   }
+
   .cta-row{
     text-align:center;
     margin-top:56px;
   }
+
   .cta{
     display:inline-block;
     font-family:'Source Sans 3',sans-serif;
@@ -175,7 +204,11 @@
     letter-spacing:0.02em;
     transition:background 0.2s ease;
   }
-  .cta:hover{background:var(--ink);}
+
+  .cta:hover{
+    background:var(--ink);
+  }
+
   footer{
     text-align:center;
     padding:28px 0 40px;
@@ -183,23 +216,66 @@
     color:#7C8A9A;
     border-top:1px solid var(--line);
   }
+
+  /* MOBILE ADJUSTMENTS */
+
+  @media(max-width:480px){
+
+    header{
+      padding:40px 0 24px;
+    }
+
+    .mark{
+      width:180px;
+      height:180px;
+    }
+
+    .brand-name{
+      font-size:38px;
+      letter-spacing:0.12em;
+    }
+
+    .tagline{
+      font-size:19px;
+    }
+
+    h3{
+      font-size:26px;
+    }
+
+    .wrap{
+      padding:0 22px;
+    }
+  }
+
 </style>
 </head>
 
 <body>
+
   <div class="wrap">
 
     <header>
+
       <img class="mark"
-           src="/kinapheon-logo-circlesafe.jpg"
-           alt="Kinapheon">
+           src="/kinapheon-logo-circleheart.jpg"
+           alt="Kinapheon logo">
+
+      <h1 class="brand-name">KINAPHEON</h1>
+
+      <p class="tagline">
+        A arte de coidarse en cada movemento.
+      </p>
+
     </header>
 
     <div class="rule"></div>
 
     <main>
 
-      <h3>Especialista en movemento, deporte, saúde e benestar inclusivo.</h3>
+      <h3>
+        Especialista en movemento, deporte, saúde e benestar inclusivo.
+      </h3>
 
       <blockquote>
         Deseño experiencias de movemento adaptadas a cada etapa da vida:
@@ -243,6 +319,7 @@
 
       <div class="contact">
         <span class="phone-label">CHÁMANOS</span>
+
         <a class="phone" href="tel:+34626454197">
           +34 626 45 41 97
         </a>
@@ -251,9 +328,10 @@
     </main>
 
     <footer>
-      Kinapheon — A arte de coidarte en cada movemento.
+      KINAPHEON — A arte de coidarte en cada movemento.
     </footer>
 
   </div>
+
 </body>
 </html>
