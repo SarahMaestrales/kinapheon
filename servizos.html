@@ -149,7 +149,7 @@
   /* CONTACT */
 
   .contact{
-    margin-top:52px;
+    margin-top:48px;
     text-align:center;
   }
 
@@ -170,6 +170,34 @@
     letter-spacing:0.08em;
     color:var(--blue-light);
     margin-bottom:8px;
+  }
+  .contact .phone-label:not(:first-child){
+    margin-top:28px;
+  }
+  .email{
+    display:block;
+    font-family:'Source Sans 3',sans-serif;
+    font-size:16px;
+    color:var(--blue);
+    text-decoration:none;
+    margin-top:24px;
+    transition:color 0.2s ease;
+  }
+
+  .email:hover{
+      color:var(--ink);
+      text-decoration:underline;
+    }
+  .location{
+    display:block;
+    font-family:'Source Sans 3',sans-serif;
+    font-size:14px;
+    color:var(--blue-light);
+    margin:24px auto 0;
+    padding-top:24px;
+    border-top:1px solid var(--line);
+    max-width:220px;
+    letter-spacing:0.03em;
   }
 
   /* FOOTER */
@@ -296,17 +324,30 @@
       <div class="contact">
 
         <span class="phone-label">CHÁMANOS</span>
-
+      
         <a class="phone" href="tel:+34626454197">
           +34 626 45 41 97
         </a>
-
-      </div>
+        <br>
+      
+        <span class="phone-label">ENDEREZO ELECTRÓNICO</span>
+      
+        <a class="email" href="mailto:direccion@kinapheon.com">
+          direccion@kinapheon.com
+        </a>
+      
+        <p class="location">
+          Ames, A Coruña
+        </p>
+    
+    </div>
 
     </main>
 
     <footer>
-      KINAPHEON — A arte de coidarte en cada movemento.
+      KINAPHEON<sup>®</sup> — A arte de coidarte en cada movemento.
+      <br>
+      © 2026 Todo-los dereitos reservados
     </footer>
 
   </div>
